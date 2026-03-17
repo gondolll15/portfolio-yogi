@@ -338,7 +338,76 @@ border-top:1px solid #222;
 color:#aaa;
 margin-top:50px;
 }
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media (max-width: 768px){
 
+  /* NAVBAR */
+  nav{
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* HERO */
+  .hero{
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 5%;
+  }
+
+  .hero-text h1{
+    font-size: 32px;
+  }
+
+  .hero-text h2{
+    font-size: 18px;
+  }
+
+  .hero-lottie{
+    width: 250px;
+  }
+
+  /* ABOUT */
+  .about{
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* SKILL */
+  .skill-grid{
+    gap: 15px;
+  }
+
+  .skill-card{
+    min-width: 120px;
+    padding: 20px;
+  }
+
+  /* PROJECT */
+  .projects{
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACT */
+  .contact-card{
+    width: 140px;
+    height: 110px;
+  }
+
+  /* SECTION */
+  section{
+    padding: 60px 5%;
+  }
+
+}
 </style>
 </head>
 
