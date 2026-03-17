@@ -234,38 +234,24 @@ color:#ffd700;
 text-align:center;
 }
 
+/* SKILL MOBILE - 5 DALAM 1 BARIS */
 .skill-grid{
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
-margin:auto;
-max-width:1200px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 }
 
 .skill-card{
-background:#111;
-border-radius:10px;
-padding:30px;
-text-align:center;
-transition:.3s;
-border:1px solid #222;
-min-width:130px;
+  min-width: unset;
+  padding: 10px;
 }
 
-.skill-card:hover{
-transform:translateY(-10px);
-border-color:#ffd700;
-}
-
-.skill-card i{
-font-size:50px;
-margin-bottom:10px;
+.skill-card img{
+  width: 35px !important;
 }
 
 .skill-card p{
-color:#ddd;
-font-weight:500;
+  font-size: 11px;
 }
 
 /* PROJECT */
@@ -406,6 +392,8 @@ margin-top:50px;
   section{
     padding: 60px 5%;
   }
+
+}
 
 }
 </style>
