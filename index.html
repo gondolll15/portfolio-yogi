@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8]">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Portfolio Yogi</title>
@@ -13,9 +12,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -168,12 +165,11 @@ background:#ffd700;
 color:black;
 }
 
+/* LOTTIE */
 .hero-lottie{
 width:350px;
 animation:float 4s ease-in-out infinite;
 background:transparent;
-
-/* 🔥 INI KUNCINYA */
 overflow:hidden;
 border-radius:20px;
 }
@@ -182,8 +178,6 @@ border-radius:20px;
 width:100%;
 height:100%;
 background:transparent !important;
-
-/* 🔥 POTONG SISI LUAR */
 transform: scale(1.15);
 }
 
@@ -214,7 +208,7 @@ text-align:left;
 margin:auto;
 }
 
-/* ANIMASI TAMBAHAN (TIDAK MENGGANGGU) */
+/* ANIMASI */
 .reveal{
 opacity:0;
 transform:translateY(50px);
@@ -230,29 +224,42 @@ transform:translateY(0);
 color:#ffd700;
 }
 
-/* SKILLS */
+/* SKILLS (DESKTOP) */
 .skill-section{
 text-align:center;
 }
 
-/* SKILL MOBILE - 5 DALAM 1 BARIS */
 .skill-grid{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin:auto;
+max-width:1200px;
 }
 
 .skill-card{
-  min-width: unset;
-  padding: 10px;
+background:#111;
+border-radius:10px;
+padding:30px;
+text-align:center;
+transition:.3s;
+border:1px solid #222;
+min-width:130px;
+}
+
+.skill-card:hover{
+transform:translateY(-10px);
+border-color:#ffd700;
 }
 
 .skill-card img{
-  width: 35px !important;
+width:60px;
 }
 
 .skill-card p{
-  font-size: 11px;
+color:#ddd;
+font-weight:500;
 }
 
 /* PROJECT */
@@ -283,7 +290,7 @@ border-color:#ffd700;
 padding:15px;
 }
 
-/* CONTACT */
+/* CONTACT (DESKTOP) */
 .contact-grid{
 display:flex;
 justify-content:center;
@@ -325,6 +332,7 @@ border-top:1px solid #222;
 color:#aaa;
 margin-top:50px;
 }
+
 /* =========================
    RESPONSIVE MOBILE
 ========================= */
@@ -368,14 +376,24 @@ margin-top:50px;
     padding: 0 10px;
   }
 
-  /* SKILL */
+  /* SKILL MOBILE (5 1 BARIS) */
   .skill-grid{
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
   }
 
   .skill-card{
-    min-width: 120px;
-    padding: 20px;
+    padding: 10px;
+    min-width: unset;
+  }
+
+  .skill-card img{
+    width: 35px !important;
+  }
+
+  .skill-card p{
+    font-size: 11px;
   }
 
   /* PROJECT */
@@ -383,18 +401,30 @@ margin-top:50px;
     grid-template-columns: 1fr;
   }
 
-  /* CONTACT */
+  /* CONTACT MOBILE (1 BARIS) */
+  .contact-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
   .contact-card{
-    width: 140px;
-    height: 110px;
+    width: 100%;
+    height: 90px;
+  }
+
+  .contact-card i{
+    font-size: 22px;
+  }
+
+  .contact-card p{
+    font-size: 12px;
   }
 
   /* SECTION */
   section{
     padding: 60px 5%;
   }
-
-}
 
 }
 </style>
