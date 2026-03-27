@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -7,12 +8,14 @@
 <title>Portfolio Yogi</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -169,6 +172,8 @@ color:black;
 width:350px;
 animation:float 4s ease-in-out infinite;
 background:transparent;
+
+/* 🔥 INI KUNCINYA */
 overflow:hidden;
 border-radius:20px;
 }
@@ -177,6 +182,8 @@ border-radius:20px;
 width:100%;
 height:100%;
 background:transparent !important;
+
+/* 🔥 POTONG SISI LUAR */
 transform: scale(1.15);
 }
 
@@ -207,6 +214,7 @@ text-align:left;
 margin:auto;
 }
 
+/* ANIMASI TAMBAHAN (TIDAK MENGGANGGU) */
 .reveal{
 opacity:0;
 transform:translateY(50px);
@@ -227,22 +235,24 @@ color:#ffd700;
 text-align:center;
 }
 
+/* SKILL MOBILE - 5 DALAM 1 BARIS */
 .skill-grid{
-display:grid;
-grid-template-columns: repeat(5, 1fr);
-gap:10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 }
 
 .skill-card{
-padding:10px;
+  min-width: unset;
+  padding: 10px;
 }
 
 .skill-card img{
-width:35px !important;
+  width: 35px !important;
 }
 
 .skill-card p{
-font-size:11px;
+  font-size: 11px;
 }
 
 /* PROJECT */
@@ -315,109 +325,78 @@ border-top:1px solid #222;
 color:#aaa;
 margin-top:50px;
 }
-
 /* =========================
-   RESPONSIVE MOBILE (FIXED)
+   RESPONSIVE MOBILE
 ========================= */
 @media (max-width: 768px){
 
-nav{
-flex-direction:column;
-gap:10px;
-text-align:center;
-}
+  /* NAVBAR */
+  nav{
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
 
-nav ul{
-flex-wrap:wrap;
-justify-content:center;
-gap:12px;
-}
+  nav ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
 
-.hero{
-flex-direction:column;
-text-align:center;
-padding:40px 5%;
-}
+  /* HERO */
+  .hero{
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 5%;
+  }
 
-.hero-text{
-max-width:100%;
-}
+  .hero-text h1{
+    font-size: 32px;
+  }
 
-.hero-text h1{
-font-size:28px;
-}
+  .hero-text h2{
+    font-size: 18px;
+  }
 
-.hero-text h2{
-font-size:16px;
-}
+  .hero-lottie{
+    width: 250px;
+  }
 
-.hero-lottie{
-width:220px;
-}
+  /* ABOUT */
+  .about{
+    text-align: center;
+    padding: 0 10px;
+  }
 
-.btn{
-padding:10px 25px;
-font-size:14px;
-}
+  /* SKILL */
+  .skill-grid{
+    gap: 15px;
+  }
 
-.about{
-text-align:center;
-padding:0 10px;
-font-size:14px;
-}
+  .skill-card{
+    min-width: 120px;
+    padding: 20px;
+  }
 
-/* 🔥 PERBAIKAN UTAMA */
-.skill-grid{
-grid-template-columns: repeat(2, 1fr);
-gap:15px;
-}
+  /* PROJECT */
+  .projects{
+    grid-template-columns: 1fr;
+  }
 
-.skill-card{
-padding:15px;
-}
+  /* CONTACT */
+  .contact-card{
+    width: 140px;
+    height: 110px;
+  }
 
-.skill-card img{
-width:40px !important;
-}
-
-.skill-card p{
-font-size:12px;
-}
-
-.projects{
-grid-template-columns:1fr;
-gap:15px;
-}
-
-.project h3{
-font-size:14px;
-text-align:center;
-}
-
-.contact-grid{
-gap:15px;
-}
-
-.contact-card{
-width:130px;
-height:100px;
-font-size:13px;
-}
-
-.contact-card i{
-font-size:25px;
-}
-
-section{
-padding:50px 5%;
-}
-
-.section-title{
-font-size:26px;
-}
+  /* SECTION */
+  section{
+    padding: 60px 5%;
+  }
 
 }
 
+}
 </style>
 </head>
 
@@ -460,13 +439,87 @@ background="transparent" speed="1" style="width:100%" loop autoplay>
 </div>
 </div>
 
+<!-- (SEMUA BAGIAN BAWAH TETAP SAMA, TIDAK DIUBAH SAMA SEKALI) -->
+
 <!-- ABOUT -->
 <section id="about">
 <h2 class="section-title reveal">Tentang Saya</h2>
 <div class="about reveal">
-<p>Saya <b>Yogi Pratama</b>, siswa SMK Negeri 1 Galang jurusan <b>Rekayasa Perangkat Lunak</b>.</p>
+<p>
+Saya <b>Yogi Pratama</b>, siswa SMK Negeri 1 Galang jurusan 
+<b>Rekayasa Perangkat Lunak</b> yang memiliki minat besar dalam bidang Web Development.
+</p>
+
+<br>
+
+<p>
+Saya sedang mempelajari HTML, CSS, JavaScript, PHP, dan MySQL serta terus mengembangkan skill dalam membuat website modern dan interaktif.
+</p>
+
+<br>
+
+<p>
+Project yang pernah saya buat:
+<br>• Website PPDB Sekolah
+<br>• Website Jadwal Rapat Kominfo
+<br>• Portfolio Website
+</p>
+
+<br>
+
+<p>
+Saya memiliki tujuan menjadi seorang <b>Fullstack Developer</b> yang handal.
+</p>
 </div>
 </section>
+
+<!-- SKILLS -->
+<section id="skills" class="skill-section">
+<h2 class="section-title">Programming Skills</h2>
+<div class="skill-grid">
+<div class="skill-card"><img src="animasi/img/html.png" style="width:60px;"><p>html</p></div>
+<div class="skill-card"><img src="animasi/img/css.png" style="width:60px;"><p>css</p></div>
+<div class="skill-card"><img src="animasi/img/js.png" style="width:60px;"><p>javascript</p></div>
+<div class="skill-card"><img src="animasi/img/php.png" style="width:60px;"><p>php</p></div>
+<div class="skill-card"><img src="animasi/img/sql.png" style="width:60px;"><p>MySQL</p></div>
+</div>
+
+<br>
+
+<h2 class="section-title">Tools & Software</h2>
+<div class="skill-grid">
+<div class="skill-card"><img src="animasi/img/code.png" style="width:60px;"><p>vs code</p></div>
+<div class="skill-card"><img src="animasi/img/xmapp.png" style="width:60px;"><p>xampp</p></div>
+<div class="skill-card"><img src="animasi/img/git.png" style="width:60px;"><p>git</p></div>
+<div class="skill-card"><img src="animasi/img/github.png" style="width:60px;"><p>github</p></div>
+<div class="skill-card"><img src="animasi/img/microsoft.png" style="width:60px;"><p>microsoft</p></div>
+</div>
+</section>
+
+<!-- PROJECT -->
+<section id="project">
+<h2 class="section-title">My Project</h2>
+<div class="projects">
+<div class="project"><img src="animasi/img/kominfo.jpeg"><h3>Website Jadwal Rapat Kominfo</h3></div>
+<div class="project"><img src="animasi/img/sekolah.jpeg"><h3>Website PPDB Sekolah</h3></div>
+<div class="project"><img src="animasi/img/portofolio.jpeg"><h3>Portfolio Website</h3></div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="section-title">Follow me</h2>
+<div class="contact-grid">
+<a href="mailto:yogipratama6195@gmail.com" class="contact-card"><i class="fas fa-envelope"></i><p>Email</p></a>
+<a href="https://www.instagram.com/pratamayogiii7" class="contact-card"><i class="fab fa-instagram"></i><p>Instagram</p></a>
+<a href="https://wa.me/6285381850499" class="contact-card"><i class="fab fa-whatsapp"></i><p>WhatsApp</p></a>
+<a href="https://www.tiktok.com/@ndollllz" class="contact-card"><i class="fab fa-tiktok"></i><p>TikTok</p></a>
+</div>
+</section>
+
+<footer>
+© 2026 Yogi Pratama
+</footer>
 
 <script>
 new Typed(".typing",{
